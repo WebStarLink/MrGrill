@@ -1,0 +1,169 @@
+@media (min-width: 340px) {
+}
+@media (min-width: 380px) {
+  .cart__item_qty {
+    padding: 1rem;
+  }
+  .cart__item_summary p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 575.98px) {
+  .wrapper {
+    padding: 0 calc(50% - 270px);
+  }
+  .sticky {
+    left: 0;
+    padding: 1rem calc(50% - 270px);
+  }
+  a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .wrapper {
+    padding: 0 calc(50% - 360px);
+  }
+  .sticky {
+    left: 0;
+    padding: 1rem calc(50% - 360px);
+  }
+
+  .head__menu__items {
+    justify-content: flex-start;
+  }
+  .foot__logo {
+    width: 25%;
+  }
+  .listing__block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .listing__item {
+    width: 49%;
+    margin: 0.3rem;
+    position: relative;
+  }
+  .listing__info {
+    position: relative;
+    margin: 0;
+  }
+  details[open] {
+    position: absolute;
+    background: #f5f5f7;
+    z-index: 1;
+    top: -1.5rem;
+    box-shadow: 1px 1px 5px #0000005e;
+  }
+  .foot__logo_img {
+    img {
+      max-width: 60%;
+    }
+  }
+  .workindday__alert_message {
+    width: 50%;
+  }
+  .workingday__alert_button {
+    width: 10%;
+  }
+  .workinday__alert {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .wrapper {
+    padding: 0 calc(50% - 480px);
+  }
+  .sticky {
+    left: 0;
+    padding: 1rem calc(50% - 480px);
+  }
+  .head {
+    padding: 1.2rem 5rem;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  ul,
+  li,
+  p,
+  a,
+  span {
+    font-size: 1.5rem;
+  }
+
+  .listing__item h3 {
+    font-size: 1.5rem;
+  }
+  .btn__secondary {
+    font-size: 1.5rem;
+  }
+  summary {
+    font-size: 1.2rem;
+  }
+
+  .foot__logo {
+    width: 20%;
+  }
+
+  .info__block {
+    justify-content: space-around;
+  }
+
+  .info__block__delivery_price,
+  .info__block_delivery_outside,
+  .info__block_workinghour {
+    width: 33%;
+  }
+
+  .cart__block {
+    width: 49%;
+  }
+
+  .checkout__order {
+    width: 49%;
+    height: fit-content;
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .wrapper {
+    padding: 0 calc(50% - 590px);
+  }
+  .head {
+    padding: 1.2rem 2rem;
+  }
+  .head__logo img {
+    width: 13rem;
+  }
+  .head__menu__items {
+    justify-content: space-between;
+  }
+  .listing__item {
+    align-items: flex-start;
+    box-shadow: 1px 1px 2px #00000038;
+    width: 32%;
+    margin: 0.6rem;
+  }
+  .sticky {
+    left: 0;
+    padding: 1rem calc(50% - 590px);
+  }
+  .listing__description {
+    padding: 0.5rem 1rem;
+  }
+
+  .btn__secondary {
+    font-size: 1.3rem;
+  }
+  .foot__logo {
+    width: 15%;
+  }
+}

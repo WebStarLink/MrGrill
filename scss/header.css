@@ -1,0 +1,229 @@
+.bg_darkgray {
+  background: #f5f5f5;
+}
+
+.bg_red {
+  background: #e4584b;
+  border-radius: 1.5rem;
+}
+
+.btn__primary {
+  width: 100%;
+  background: #fccc4c;
+  color: #000;
+  display: block;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.btn__primary:hover {
+  background: #fccc4c;
+}
+
+.btn__secondary {
+  display: block;
+  padding: 1rem 2rem;
+  margin: 0.5rem auto;
+  border-radius: 3rem;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+  color: #e4584b;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+
+.btn__secondary:hover {
+  background: #fccc4c;
+  color: #000;
+}
+
+.divider-bottom {
+  border-bottom: 1px solid #f5f5f5;
+  margin-bottom: 1rem;
+}
+
+.divider-top {
+  border-top: 1px solid #f5f5f5;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.head__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 35%;
+}
+
+.head__contact_btn {
+  margin-left: 1.5rem;
+}
+
+.head__contact_btn [class^="flaticon-"]:before {
+  font-size: 3.3rem;
+}
+
+.head__logo img {
+  width: 7rem;
+  max-width: 25rem;
+  margin-right: 1rem;
+}
+
+.head__menu {
+  width: 100%;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.head__menu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.head__menu__items li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 1.2rem;
+  margin-right: 0.5rem;
+  background: #f4f4f4;
+  border-radius: 5rem;
+}
+
+.head__menu__items li:first-child {
+  background: #fccc4c;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.head__menu__items li.active {
+  background: #fccc4c;
+}
+
+.head__menu__items i {
+  margin-right: 0.5rem;
+}
+
+.head__menu__items i:before {
+  font-size: 23px;
+}
+
+.head__menu__items a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.head__menu__items::-webkit-scrollbar {
+  display: none;
+}
+
+.cart__count {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border-radius: 50%;
+  color: #fff;
+  background: #e4584b;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+
+.head__menu_icon {
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head__info_call,
+.head__info_map {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sticky {
+  position: fixed;
+  display: block;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  background: #fff;
+}
+
+@-webkit-keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=header.css.map */

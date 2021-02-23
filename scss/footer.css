@@ -1,0 +1,138 @@
+.bg_darkgray {
+  background: #f5f5f5;
+}
+
+.bg_red {
+  background: #e4584b;
+  border-radius: 1.5rem;
+}
+
+.btn__primary {
+  width: 100%;
+  background: #fccc4c;
+  color: #000;
+  display: block;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.btn__primary:hover {
+  background: #fccc4c;
+}
+
+.btn__secondary {
+  display: block;
+  padding: 1rem 2rem;
+  margin: 0.5rem auto;
+  border-radius: 3rem;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+  color: #e4584b;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+
+.btn__secondary:hover {
+  background: #fccc4c;
+  color: #000;
+}
+
+footer {
+  background: #636363;
+}
+
+.foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.foot li {
+  padding: 0.3rem 0;
+}
+
+.foot li a {
+  padding: 0;
+}
+
+.foot .foot__totop {
+  position: absolute;
+  top: -3rem;
+  right: 2%;
+  width: 50px;
+  height: 50px;
+  color: #000;
+  background: #fccc4c;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.foot .foot__totop i::before {
+  font-size: 3.5rem;
+  color: #000;
+}
+
+.foot__logo {
+  width: 30%;
+  margin-right: auto;
+}
+
+.foot__logo .foot__logo_img {
+  width: 100%;
+}
+
+.foot__logo .foot__logo_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.foot__logo .foot__logo_btn a {
+  margin-right: 1rem;
+  color: #fff;
+}
+
+.foot__logo .foot__logo_btn i:before {
+  font-size: 3rem;
+  color: #f5f5f5;
+  margin-right: 1rem;
+}
+
+.foot__menu {
+  width: 70%;
+  text-align: right;
+  padding: 1.5rem 0;
+}
+
+.foot__menu p {
+  padding: 0;
+  padding-bottom: 1rem;
+  max-width: 70%;
+  margin-left: auto;
+  color: #f5f5f5;
+}
+
+.foot__menu i::before {
+  color: #f5f5f5;
+  font-size: 3rem;
+}
+/*# sourceMappingURL=footer.css.map */

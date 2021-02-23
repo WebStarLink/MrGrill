@@ -1,0 +1,102 @@
+@import "./colors.scss";
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+body {
+  width: 100%;
+  margin: auto;
+  background: $white;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 1.4rem;
+  font-family: "montserrat", "arial", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: $black;
+  padding: 2rem 0 2rem;
+  text-align: center;
+}
+h2,
+h3 {
+  font-family: "montserrat", "arial", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: $black;
+  padding: 2rem 0 2rem;
+  text-align: center;
+}
+ul,
+ol,
+li,
+p,
+a,
+span {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  color: $black;
+  text-decoration: none;
+  padding: 1.5rem 0rem;
+  font-size: 1.3rem;
+}
+p {
+  line-height: 2rem;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+}
+li {
+  padding: 0.6rem;
+}
+a {
+  font-weight: 500;
+
+  &:hover,
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+menu {
+  padding: 0;
+  display: contents;
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+// MAIN STYLES
+
+.wrapper {
+  padding: 0 3%;
+  position: relative;
+}
+
+.content {
+  background: $white;
+  border-radius: 1.5rem;
+  p {
+    padding: 1.5rem;
+  }
+  &:last-child {
+    margin-bottom: 8rem;
+  }
+}

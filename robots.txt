@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /
+Disallow: /contacts.html
+Disallow: /php/
+Disallow: /scss/
+Sitemap: 

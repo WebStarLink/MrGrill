@@ -1,0 +1,45 @@
+.bg_darkgray {
+  background: #f5f5f5;
+}
+
+.bg_red {
+  background: #e4584b;
+  border-radius: 1.5rem;
+}
+
+.btn__primary {
+  width: 100%;
+  background: #fccc4c;
+  color: #000;
+  display: block;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.btn__primary:hover {
+  background: #fccc4c;
+}
+
+.btn__secondary {
+  display: block;
+  padding: 1rem 2rem;
+  margin: 0.5rem auto;
+  border-radius: 3rem;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+  color: #e4584b;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+
+.btn__secondary:hover {
+  background: #fccc4c;
+  color: #000;
+}
+/*# sourceMappingURL=colors.css.map */

@@ -1,0 +1,125 @@
+@import "./colors.scss";
+.divider-bottom {
+  border-bottom: 1px solid $darkgray;
+  margin-bottom: 1rem;
+}
+.divider-top {
+  border-top: 1px solid $darkgray;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.head__logo {
+  display: flex;
+  width: 65%;
+  align-items: center;
+}
+.head__contact {
+  display: flex;
+  justify-content: flex-end;
+  width: 35%;
+}
+.head__contact_btn {
+  margin-left: 1.5rem;
+  & [class^="flaticon-"]:before {
+    font-size: 3.3rem;
+  }
+}
+.head__logo img {
+  width: 7rem;
+  max-width: 25rem;
+  margin-right: 1rem;
+}
+.head__menu {
+  width: 100%;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.head__menu__items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  overflow-x: scroll;
+  li {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.2rem;
+    margin-right: 0.5rem;
+    background: #f4f4f4;
+    border-radius: 5rem;
+    &:first-child {
+      background: $yellow;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+    &.active {
+      background: $yellow;
+    }
+  }
+  & i {
+    margin-right: 0.5rem;
+    &:before {
+      font-size: 23px;
+    }
+  }
+  & a {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.cart__count {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border-radius: 50%;
+  color: $white;
+  background: $red;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+
+.head__menu_icon {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head__info_call,
+.head__info_map {
+  display: none;
+  flex-wrap: wrap;
+}
+
+.sticky {
+  position: fixed;
+  display: block;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  background: $white;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

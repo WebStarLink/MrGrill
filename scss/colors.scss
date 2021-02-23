@@ -1,0 +1,50 @@
+$lightgray: #f5f5f7;
+$darkgray: #f5f5f5;
+$gray: #bcbcbc;
+$blackgray: #636363;
+$black: #000;
+$white: #fff;
+$red: #e4584b;
+$yellow: #fccc4c;
+.bg_darkgray {
+  background: $darkgray;
+}
+
+.bg_red {
+  background: $red;
+  border-radius: 1.5rem;
+}
+
+.btn__primary {
+  width: 100%;
+  background: $yellow;
+  color: $black;
+  display: block;
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  &:hover {
+    background: $yellow;
+  }
+}
+
+.btn__secondary {
+  display: block;
+  padding: 1rem 2rem;
+  margin: 0.5rem auto;
+  border-radius: 3rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  background: $white;
+  color: $red;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: "Montserrat";
+
+  &:hover {
+    background: $yellow;
+    color: $black;
+  }
+}

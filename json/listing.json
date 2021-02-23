@@ -1,0 +1,240 @@
+[
+    {
+      "id": "set-1",
+      "name": "Set №1",
+      "count": 0,
+      "img": "./images/sets/set-1.jpg",
+      "price": "50.00 BYN"
+    },
+     {
+      "id":"set-2",
+      "name": "Set №2",
+      "count": 0,
+      "img": "./images/sets/set-2.jpg",
+      "price": "62.00 BYN"
+    },
+     {
+      "id":"set-3",
+      "name": "Set №3",
+      "count": 0,
+      "img": "./images/sets/set-3.jpg",
+      "price": "50.00 BYN"
+    },
+    {
+      "id": "set-4",
+      "name": "Set №4",
+      "count": 0,
+      "img": "./images/sets/set-4.jpg",
+      "price": "82.00 BYN"
+    },
+     {
+      "id":"set-5",
+      "name": "Set №5",
+      "count": 0,
+      "img": "./images/sets/set-5.jpg",
+      "price": "85.00 BYN"
+    },
+    {
+      "id": "shashlyk-sheya",
+      "name": "Шашлык из шеи",
+      "count": 0,
+      "img": "./images/bbq/shashlyk-sheya.jpg",
+      "price": "23.00 BYN"
+    },
+    {
+      "id": "shashlyk-rebra",
+      "name": "Шашлык из ребрышек",
+      "count": 0,
+      "img": "./images/bbq/shashlyk-rebra.jpg",
+      "price": "20.00 BYN"
+    },
+    {
+      "id": "shaslyk-porkbone",
+      "name": "Шашлык из корейки на кости",
+      "count": 0,
+      "img": "./images/bbq/shaslyk-porkbone.jpg",
+      "price": "23.00 BYN"
+    },
+    {
+      "id": "shashluk-kurinnaya-grudka",
+      "name": "Шашлык из куриной грудки",
+      "count": 0,
+      "img": "./images/bbq/shashluk-kurinnaya-grudka.jpg",
+      "price": "14.00 BYN"
+    },
+    {
+      "id": "shashluk-kurinnye-krylia",
+      "name": "Шашлык из куриных крылышек",
+      "count": 0,
+      "img": "./images/bbq/shashluk-kurinnye-krylia.jpg",
+      "price": "12.50 BYN"
+    },
+    {
+      "id": "shashluk-kurinnye-nozhki",
+      "name": "Шашлык из куриных ножек",
+      "count": 0,
+      "img": "./images/bbq/shashluk-kurinnye-nozhki.jpg",
+      "price": "11.00 BYN"
+    },
+    {
+      "id": "shashlyk-baranina",
+      "name": "Шашлык из баранины",
+      "count": 0,
+      "img": "./images/bbq/shashlyk-baranina.jpg",
+      "price": "45.00 BYN"
+    },
+    {
+      "id": "suluguni-na-uglyah",
+      "name": "Сыр сулугуни на углях",
+      "count": 0,
+      "img": "./images/bbq/suluguni-na-uglyah.jpg",
+      "price": "8.00 BYN"
+    },
+    {
+      "id": "semga-na-uglyah",
+      "name": "Шашлык из филе семги",
+      "count": 0,
+      "img": "./images/bbq/semga-na-uglyah.jpg",
+      "price": "22.00 BYN"
+    },
+    {
+      "id": "shrimp",
+      "name": "Королевские креветки гриль",
+      "count": 0,
+      "img": "./images/bbq/shrimp.jpg",
+      "price": "21.00 BYN"
+    },
+    {
+      "id": "doner-bbq-s",
+      "name": "Шаурма на углях маленькая",
+      "count": 0,
+      "img": "./images/doner/shaurma.jpg",
+      "price": "5.00 BYN"
+    },
+    {
+      "id": "doner-bbq-l",
+      "name": "Шаурма на углях большая",
+      "count": 0,
+      "img": "./images/doner/shaurma.jpg",
+      "price": "10.00 BYN"
+    },
+    {
+      "id": "doner-s",
+      "name": "Шаурма на углях маленькая",
+      "count": 0,
+      "img": "./images/doner/shaurma.jpg",
+      "price": "5.00 BYN"
+    },
+    {
+      "id": "doner-m",
+      "name": "Шаурма на углях маленькая",
+      "count": 0,
+      "img": "./images/doner/shaurma.jpg",
+      "price": "6.00 BYN"
+    },
+    {
+      "id": "doner-l",
+      "name": "Шаурма на углях маленькая",
+      "count": 0,
+      "img": "./images/doner/shaurma.jpg",
+      "price": "10.00 BYN"
+    },
+    {
+      "id": "doner-xl",
+      "name": "Шаурма на углях маленькая",
+      "count": 0,
+      "img": "./images/doner/shaurma.jpg",
+      "price": "11.00 BYN"
+    },
+    {
+      "id": "kebab-porkbeef",
+      "name": "Кебаб из говядины и свинины",
+      "count": 0,
+      "img": "./images/kebab/kebab-porkbeef.jpg",
+      "price": "10.00 BYN"
+    },
+    {
+      "id": "kebab-chiken",
+      "name": "Кебаб из курицы",
+      "count": 0,
+      "img": "./images/kebab/kebab-chiken.jpg",
+      "price": "8.00 BYN"
+    },
+    {
+      "id": "ovoshnoi-salat",
+      "name": "Овощной салат на углях",
+      "count": 0,
+      "img": "./images/vegetables/ovoshnoi-salat.jpg",
+      "price": "16.00 BYN"
+    },
+    {
+      "id": "ovoshi-na-uglyah",
+      "name": "Овощи на углях",
+      "count": 0,
+      "img": "./images/vegetables/ovoshi-na-uglyah.jpg",
+      "price": "15.00 BYN"
+    },
+    {
+      "id": "shampiniony-na-uglyah",
+      "name": "Шампьньоны на углях",
+      "count": 0,
+      "img": "./images/vegetables/shampiniony-na-uglyah.jpg",
+      "price": "7.00 BYN"
+    },
+    {
+      "id": "villagepotatoes",
+      "name": "Картофель по-деревенски",
+      "count": 0,
+      "img": "./images/dishes/villagepotatoes.jpg",
+      "price": "3.00 BYN"
+    },
+    {
+      "id": "french-fries",
+      "name": "Картофель фри",
+      "count": 0,
+      "img": "./images/dishes/french-fries.jpg",
+      "price": "2.50 BYN"
+    },
+    {
+      "id": "potatougli",
+      "name": "Картофель на углях",
+      "count": 0,
+      "img": "./images/dishes/potatougli.jpg",
+      "price": "4.00 BYN"
+    },
+    {
+      "id": "gamburgerbeef",
+      "name": "Гамбургер с говядиной",
+      "count": 0,
+      "img": "./images/dishes/gamburger.jpg",
+      "price": "6.00 BYN"
+    },
+    {
+      "id": "gamburgerchichen",
+      "name": "Гамбургер с курицей",
+      "count": 0,
+      "img": "./images/dishes/gamburger.jpg",
+      "price": "6.00 BYN"
+    },
+    {
+      "id": "sous-gorchica",
+      "name": "Фирменный горчичный соус",
+      "count": 0,
+      "img": "./images/sauses/sous-gorchica.jpg",
+      "price": "1.50 BYN"
+    },
+    {
+      "id": "sous-krasni",
+      "name": "Фирменный красный соус",
+      "count": 0,
+      "img": "./images/sauses/sous-krasni.jpg",
+      "price": "1.50 BYN"
+    },
+    {
+      "id": "sous-chesnok",
+      "name": "Фирменный чесночный соус",
+      "count": 0,
+      "img": "./images/sauses/sous-chesnok.jpg",
+      "price": "1.50 BYN"
+    }
+]
