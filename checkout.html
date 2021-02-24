@@ -151,12 +151,12 @@
                 <form>
                   <input
                     type="text"
-                    class="checkout__input"
+                    class="checkout__input input__name"
                     placeholder="Ваше имя"
                   />
                   <input
                     type="text"
-                    class="checkout__input"
+                    class="checkout__input input__address"
                     placeholder="Адрес доставки"
                   />
                   <input
@@ -166,16 +166,26 @@
                   />
                   <div class="checkout__payment">
                     <div class="cash">
-                      <input type="number" placeholder="С какой суммы сдача?" />
+                      <input
+                        type="number"
+                        class="input__cash"
+                        placeholder="С какой суммы сдача?"
+                      />
                     </div>
                     <div class="c-card">
                       <!-- <i class="flaticon-symbols"></i> -->
                       <!-- <i class="flaticon-mastercard"></i> -->
                       <!-- <i class="flaticon-mobile-payment"></i> -->
-                      <input type="checkbox" />
+                      <input
+                        type="checkbox"
+                        class="input__card"
+                        value="Картой"
+                      />
                       <i class="flaticon-credit-card"></i>
                     </div>
-                    <button class="btn__primary">Отправить заказ</button>
+                    <button id="sendBtn" class="btn__primary" type="button">
+                      Отправить заказ
+                    </button>
                   </div>
                 </form>
               </div>
@@ -256,5 +266,6 @@
     <script src="./js/imageslider.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/checkout.js"></script>
+    <script src="./js/telegram.js"></script>
   </body>
 </html>

@@ -158,7 +158,7 @@ const addToCart = (id) => {
 // ОПОВЕЩЕНИЯ
 
 const date = new Date();
-if (date.getDay() >= 5 && (date.getHours() > 21 || date.getHours() < 8)) {
+if (date.getDay() >= 5 && (date.getHours() >= 21 || date.getHours() < 9)) {
   const alertBlock = document.querySelector(".workinday__alert");
   const alertMsg = document.querySelector(".workindday__alert_message");
   alertBlock.classList.add("open");
@@ -173,7 +173,7 @@ if (date.getDay() >= 5 && (date.getHours() > 21 || date.getHours() < 8)) {
     }
   });
 }
-if (date.getDay() < 5 && (date.getHours() > 21 || date.getHours() < 8)) {
+if (date.getDay() < 5 && (date.getHours() >= 21 || date.getHours() < 9)) {
   const alertBlock = document.querySelector(".workinday__alert");
   const alertMsg = document.querySelector(".workindday__alert_message");
   alertBlock.classList.add("open");

@@ -98,7 +98,14 @@ const singleItemMinus = (id) => {
 const orderInputs = document.querySelector(".checkout__order");
 orderInputs.addEventListener("click", (event) => {
   const orderPhone = document.querySelector(".checkout__phone");
-  if (event.target.classList.contains("checkout__phone")) {
+  if (
+    event.target.classList.contains("checkout__phone") &&
+    document.querySelector(".checkout__phone").value.length > 4
+  ) {
+    return;
+  } else if (document.querySelector(".checkout__phone").value.length > 4) {
+    return;
+  } else if (event.target.classList.contains("checkout__phone")) {
     orderPhone.value = "+375";
   } else {
     orderPhone.value = "";
