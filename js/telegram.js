@@ -39,27 +39,68 @@ function renderMessage() {
     let total = cart[i]["price"];
     if (cart[i]["count"] > 0) {
       telegramTotal += cart[i]["count"] * parseFloat(total);
-      //   summaryInfo.innerHTML = `${allcount} BYN`;
       let result = `${text} x [${count}]`;
       sumOfCart += `${result}%0A`;
       message = `=============================%0A🍖=== Новый заказ в ${date.getHours()}:${
         (date.getMinutes() < 10 ? "0" : "") + date.getMinutes()
-      } ===🍖%0A=============================%0A<b>Имя:</b> ${name}%0A<b>Адрес:</b> ${address}%0A<b>Телефон:</b> ${phone}%0A<b>Оплата:</b> ${payment}%0A==========ЗАКАЗ:=============%0A${sumOfCart}%0A==========СУММА:=============%0AСумма заказа: ${telegramTotal} BYN&parse_mode=html`;
+      } ===🍖%0A=============================%0A<b>Имя:</b> ${name}%0A<b>Адрес:</b> ${address}%0A<b>Телефон:</b> ${phone}%0A<b>Оплата:</b> ${payment}%0A==========ЗАКАЗ=============%0A${sumOfCart}%0A==========СУММА=============%0AСумма заказа: ${telegramTotal} BYN&parse_mode=html`;
     }
   }
-  console.log(message);
-  console.log(telegramTotal);
-  let xhttp = new XMLHttpRequest();
-  xhttp.open("GET", url + message, true);
-  xhttp.send();
+
+  fetch(url + message).then((success) => {
+    if (success.ok === false) {
+      fetchError();
+    } else {
+      fetchSuccess();
+      console.log("Success");
+    }
+  });
 }
 
 function clearCart() {
   for (i in cart) {
     cart[i]["count"] = 0;
   }
-  console.log(cart);
   localStorage.setItem("cart", JSON.stringify(cart));
   calcQty();
   renderCart();
+}
+
+function fetchError() {
+  const alertBlock = document.querySelector(".checkout__alert");
+  const alertMsg = document.querySelector(".checkout__alert_message");
+  alertBlock.classList.add("open");
+  alertMsg.innerHTML = `<p>
+  Ваша корзина пуста<br>
+  Вам нужно что-нибудь добавить :)
+  </p>`;
+  alertBlock.addEventListener("click", (event) => {
+    if (event.target.classList.contains("alert__btn")) {
+      alertBlock.classList.remove("open");
+    }
+  });
+}
+function fetchSuccess() {
+  const alertBlock = document.querySelector(".checkout__alert");
+  const alertMsg = document.querySelector(".checkout__alert_message");
+  alertBlock.classList.add("open");
+  alertMsg.innerHTML = `<p>
+  Мы только что приняли ваш заказ!<br>
+  Мы свяжемся с вами в ближайшее время.
+  </p>`;
+  alertBlock.addEventListener("click", (event) => {
+    if (event.target.classList.contains("alert__btn")) {
+      alertBlock.classList.remove("open");
+    }
+  });
+}
+
+function fieldValidation() {
+  const name = document.querySelector(".input__name");
+  const address = document.querySelector(".input__address");
+  const phone = document.querySelector(".checkout__phone");
+
+  if (name.value == "" || address.value == "" || phone.value == "") {
+    console.log("Empty fields");
+  }
 }

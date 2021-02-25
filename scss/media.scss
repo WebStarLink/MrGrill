@@ -114,7 +114,7 @@
   }
 
   .info__block {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .info__block__delivery_price,
@@ -124,11 +124,12 @@
   }
 
   .cart__block {
-    width: 49%;
+    width: 50%;
+    padding-right: 1rem;
   }
 
   .checkout__order {
-    width: 49%;
+    width: 50%;
     height: fit-content;
   }
 }

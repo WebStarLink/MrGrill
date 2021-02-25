@@ -70,6 +70,17 @@ menu.addEventListener("click", (event) => {
   });
 });
 
+// menu.addEventListener("click", (event) => {
+//   document.querySelector(".active").classList.remove("active");
+//   const button = event.target.closest(".head__menu__btn");
+//   button.classList.add("active");
+//   setTimeout(function () {
+//     document
+//       .querySelector(".active")
+//       .scrollIntoView({ behavior: "smooth", inline: "center" });
+//   });
+// });
+
 //      -------------------             МАГАЗИН               -------------------------------
 
 // ПЕРЕМЕННЫЕ МАГАЗИНА
@@ -184,6 +195,7 @@ if (date.getDay() < 5 && (date.getHours() >= 21 || date.getHours() < 9)) {
 </p>`;
   alertBlock.addEventListener("click", (event) => {
     if (event.target.classList.contains("alert__btn")) {
+      event.preventDefault;
       alertBlock.classList.remove("open");
     }
   });

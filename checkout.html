@@ -74,13 +74,13 @@
 
         <div class="head__menu divider-bottom divider-top">
           <menu class="head__menu__items">
-            <li class="head__menu__btn">
+            <li class="head__menu__btn active">
               <a href="./checkout.html"
                 ><i class="flaticon-shopping-cart"></i
                 ><span class="cart__count"></span
               ></a>
             </li>
-            <li class="head__menu__btn active">
+            <li class="head__menu__btn">
               <a href="#sets"><i class="flaticon-barbecue"></i>Комплексы</a>
             </li>
             <li class="head__menu__btn">
@@ -148,7 +148,7 @@
               </div>
               <div class="checkout__order">
                 <h2>Детали доставки</h2>
-                <form>
+                <form class="checkout__form">
                   <input
                     type="text"
                     class="checkout__input input__name"
@@ -173,9 +173,6 @@
                       />
                     </div>
                     <div class="c-card">
-                      <!-- <i class="flaticon-symbols"></i> -->
-                      <!-- <i class="flaticon-mastercard"></i> -->
-                      <!-- <i class="flaticon-mobile-payment"></i> -->
                       <input
                         type="checkbox"
                         class="input__card"
@@ -187,7 +184,15 @@
                       Отправить заказ
                     </button>
                   </div>
+                  <div class="checkout__alert">
+                    <div class="checkout__alert_message"></div>
+                    <div class="checkout__alert_button">
+                      <button class="btn__primary alert__btn" type="button">ОК</button>
+                    </div>
+                  </div>
                 </form>
+
+                </div>
               </div>
             </div>
           </div>
@@ -202,32 +207,22 @@
               <img src="./images/logo.png" alt="Барбекю драйв Mr.Grill" />
             </div>
             <div class="foot__logo_btn">
-              <a
-                href="https://t.me/starlinkby"
-                rel="nofollow noopener noreferrer"
-                ><i class="flaticon-telegram"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/webstarlink/"
-                rel="nofollow noopener noreferrer"
-                ><i class="flaticon-instagram"></i
-              ></a>
-              <a
-                href="https://www.youtube.com/channel/UCL84zV7e8RmRhhyQs9qFWIA"
-                rel="nofollow noopener noreferrer"
-                ><i class="flaticon-youtube"></i
-              ></a>
+              <i class="flaticon-mastercard"></i>
+              <i class="flaticon-symbols"></i>
             </div>
           </div>
 
           <div class="foot__menu">
-            <!-- <menu class="foot__menu_item">
-              <li><a href="./dev.html">Разработка сайта</a></li>
-              <li><a href="./seo.html">Продвижение сайта</a></li>
-              <li><a href="./ads.html">Контекстная реклама</a></li>
-              <li><a href="./help.html">Администрирование</a></li>
-              <li><a href="/price.html">Цены на услуги</a></li>
-            </menu> -->
+            <p>Скачивайте наше приложение</p>
+
+            <a
+              href="https://play.google.com/store/apps/details?id=com.foodpicasso.mrgrill&hl=ru"
+              ><i class="flaticon-google-play"></i
+            ></a>
+            <a
+              href="https://apps.apple.com/by/app/mr-grill-%D0%BC%D0%B8%D0%BD%D1%81%D0%BA/id1502258406?ign-mpt=uo%3D4"
+              ><i class="flaticon-app-store"></i
+            ></a>
           </div>
 
           <div class="foot__scheme">
@@ -248,8 +243,13 @@
             </script>
           </div>
           <div class="foot__totop">
-            <a href="#"><i class="flaticon-upload"></i></a>
+            <a href="#">
+              <i class="flaticon-upload"></i>
+            </a>
           </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sed.
+          </p>
         </div>
       </div>
     </footer>

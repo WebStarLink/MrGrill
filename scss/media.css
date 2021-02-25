@@ -112,8 +112,9 @@
     width: 20%;
   }
   .info__block {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .info__block__delivery_price,
   .info__block_delivery_outside,
@@ -121,10 +122,11 @@
     width: 33%;
   }
   .cart__block {
-    width: 49%;
+    width: 50%;
+    padding-right: 1rem;
   }
   .checkout__order {
-    width: 49%;
+    width: 50%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
