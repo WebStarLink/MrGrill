@@ -38,7 +38,7 @@
   font-family: "Montserrat";
 }
 
-.btn__secondary:hover {
+.clicked {
   background: #fccc4c;
   color: #000;
 }

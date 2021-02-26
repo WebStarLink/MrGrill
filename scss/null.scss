@@ -62,13 +62,18 @@ li {
 }
 a {
   font-weight: 500;
-
   &:hover,
   &:visited,
   &:hover,
   &:active,
   &:focus {
     -webkit-tap-highlight-color: transparent;
+  }
+  &.anchor {
+    // display: block;
+    position: relative;
+    top: -55px;
+    visibility: hidden;
   }
 }
 menu {

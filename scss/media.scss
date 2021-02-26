@@ -132,6 +132,12 @@
     width: 50%;
     height: fit-content;
   }
+  .cart__item_title {
+    width: 43%;
+  }
+  .cart__item_summary {
+    width: 32%;
+  }
 }
 
 @media (min-width: 1199.98px) {

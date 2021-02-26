@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .bg_darkgray {
   background: #f5f5f5;
 }
@@ -38,7 +39,7 @@
   font-family: "Montserrat";
 }
 
-.btn__secondary:hover {
+.clicked {
   background: #fccc4c;
   color: #000;
 }
@@ -122,6 +123,12 @@ a:hover, a:visited, a:hover, a:active, a:focus {
   -webkit-tap-highlight-color: transparent;
 }
 
+a.anchor {
+  position: relative;
+  top: -55px;
+  visibility: hidden;
+}
+
 menu {
   padding: 0;
   display: contents;
@@ -193,7 +200,7 @@ button {
   font-family: "Montserrat";
 }
 
-.btn__secondary:hover {
+.clicked {
   background: #fccc4c;
   color: #000;
 }
@@ -238,7 +245,7 @@ button {
   font-family: "Montserrat";
 }
 
-.btn__secondary:hover {
+.clicked {
   background: #fccc4c;
   color: #000;
 }
@@ -467,13 +474,17 @@ button {
   font-family: "Montserrat";
 }
 
-.btn__secondary:hover {
+.clicked {
   background: #fccc4c;
   color: #000;
 }
 
 footer {
   background: #636363;
+}
+
+footer p {
+  text-align: center;
 }
 
 .foot {
@@ -558,6 +569,7 @@ footer {
   max-width: 70%;
   margin-left: auto;
   color: #f5f5f5;
+  text-align: inherit;
 }
 
 .foot__menu i::before {
@@ -949,7 +961,7 @@ summary {
 
 .checkout__order .cash {
   margin-bottom: 1rem;
-  width: 65%;
+  width: 57%;
 }
 
 .checkout__order .cash input {
@@ -958,7 +970,7 @@ summary {
 
 .checkout__order .c-card {
   margin-bottom: 1rem;
-  width: 31%;
+  width: 39%;
   margin: 0;
   background: #fff;
   border-radius: 0.5rem;
@@ -1072,6 +1084,69 @@ summary {
 
 .checkout__alert_button .btn__primary {
   padding: 1rem;
+}
+
+/* .slideThree */
+.slideThree {
+  width: 75px;
+  height: 26px;
+  background: #fccc4c;
+  position: relative;
+  border-radius: 50px;
+  -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+
+.slideThree:after {
+  content: "Нет";
+  color: #000;
+  position: absolute;
+  right: 10px;
+  z-index: 0;
+  font: 12px/26px Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.15);
+}
+
+.slideThree:before {
+  content: "Да";
+  color: #000;
+  position: absolute;
+  left: 10px;
+  z-index: 0;
+  font: 12px/26px Arial, sans-serif;
+  font-weight: bold;
+}
+
+.slideThree label {
+  display: block;
+  width: 34px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+  background: #fcfff4;
+  border-radius: 50px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.slideThree input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.slideThree input[type="checkbox"]:checked + label {
+  left: 37px;
+}
+
+/* end .slideThree */
+.emptyfield {
+  border: 1px solid #e4584b !important;
+  position: relative;
 }
 
 @media (min-width: 380px) {
@@ -1206,6 +1281,12 @@ summary {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+  .cart__item_title {
+    width: 43%;
+  }
+  .cart__item_summary {
+    width: 32%;
   }
 }
 

@@ -42,9 +42,9 @@ $yellow: #fccc4c;
   font-size: 1.3rem;
   font-weight: 500;
   font-family: "Montserrat";
+}
 
-  &:hover {
-    background: $yellow;
-    color: $black;
-  }
+.clicked {
+  background: $yellow;
+  color: $black;
 }

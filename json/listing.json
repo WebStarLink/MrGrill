@@ -236,5 +236,54 @@
       "count": 0,
       "img": "./images/sauses/sous-chesnok.jpg",
       "price": "1.50 BYN"
+    },
+    {
+      "id": "bonaqua",
+      "name": "Bonaqua 0.5L",
+      "count": 0,
+      "img": "./images/drinks/bonaqua.jpg",
+      "price": "2.00 BYN"
+    },
+    {
+      "id": "burn",
+      "name": "Burn 0.25L",
+      "count": 0,
+      "img": "./images/drinks/burn.jpg",
+      "price": "3.50 BYN"
+    },
+    {
+      "id": "fanta",
+      "name": "Fanta 0.5L",
+      "count": 0,
+      "img": "./images/drinks/fanta.jpg",
+      "price": "2.50 BYN"
+    },
+    {
+      "id": "sprite",
+      "name": "Sprite 0.5L",
+      "count": 0,
+      "img": "./images/drinks/sprite.jpg",
+      "price": "2.50 BYN"
+    },
+    {
+      "id": "tanayran",
+      "name": "Tanayran 0.5L",
+      "count": 0,
+      "img": "./images/drinks/tanayran.jpg",
+      "price": "2.00 BYN"
+    },
+    {
+      "id": "sok-dobriy",
+      "name": "Сок «Добрый» 0.2L",
+      "count": 0,
+      "img": "./images/drinks/sok-dobriy.jpg",
+      "price": "1.50 BYN"
+    },
+    {
+      "id": "rich",
+      "name": "Сок Rich 0.2L",
+      "count": 0,
+      "img": "./images/drinks/rich.jpg",
+      "price": "3.00 BYN"
     }
 ]

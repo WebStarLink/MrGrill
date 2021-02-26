@@ -2,6 +2,9 @@
 
 footer {
   background: $blackgray;
+  p {
+    text-align: center;
+  }
 }
 
 .foot {
@@ -69,6 +72,7 @@ footer {
     max-width: 70%;
     margin-left: auto;
     color: $darkgray;
+    text-align: inherit;
   }
   i {
     &::before {

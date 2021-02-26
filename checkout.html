@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=1.0.0" />
     <link rel="stylesheet" type="text/css" href="./fonts/flaticon.css" />
     <link rel="icon" href="./images/favicon-32x32.jpg" sizes="32x32" />
     <link rel="icon" href="./images/favicon-192x192.jpg" sizes="192x192" />
@@ -81,31 +81,31 @@
               ></a>
             </li>
             <li class="head__menu__btn">
-              <a href="#sets"><i class="flaticon-barbecue"></i>Комплексы</a>
+              <a href="https://mrgrill.by/#sets"><i class="flaticon-barbecue"></i>Комплексы</a>
             </li>
             <li class="head__menu__btn">
-              <a href="#bbq"><i class="flaticon-skewer"></i>Шашлык</a>
+              <a href="https://mrgrill.by/#bbq"><i class="flaticon-skewer"></i>Шашлык</a>
             </li>
             <li class="head__menu__btn">
-              <a href="#doner"><i class="flaticon-kebab"></i>Шаурма</a>
+              <a href="https://mrgrill.by/#doner"><i class="flaticon-kebab"></i>Шаурма</a>
             </li>
             <li class="head__menu__btn">
-              <a href="#kebab"><i class="flaticon-meat"></i>Кебаб</a>
+              <a href="https://mrgrill.by/#kebab"><i class="flaticon-meat"></i>Кебаб</a>
             </li>
             <li class="head__menu__btn">
-              <a href="#vegetables"><i class="flaticon-bbq-1"></i>Овощи</a>
-            </li>
-            <li class="head__menu__btn testscroll">
-              <a href="#"><i class="flaticon-french-fries"></i>Гарниры</a>
+              <a href="https://mrgrill.by/#vegetables"><i class="flaticon-bbq-1"></i>Овощи</a>
             </li>
             <li class="head__menu__btn">
-              <a href="#"><i class="flaticon-hamburger-1"></i>Бургеры</a>
+              <a href="https://mrgrill.by/#dishes"><i class="flaticon-french-fries"></i>Гарниры</a>
             </li>
             <li class="head__menu__btn">
-              <a href="#"><i class="flaticon-sauce"></i>Соусы</a>
+              <a href="https://mrgrill.by/#burgers"><i class="flaticon-hamburger-1"></i>Бургеры</a>
             </li>
             <li class="head__menu__btn">
-              <a href="#"><i class="flaticon-sparkling-water"></i>Напитки</a>
+              <a href="https://mrgrill.by/#sauses"><i class="flaticon-sauce"></i>Соусы</a>
+            </li>
+            <li class="head__menu__btn">
+              <a href="https://mrgrill.by/#drinks"><i class="flaticon-sparkling-water"></i>Напитки</a>
             </li>
           </menu>
         </div>
@@ -163,6 +163,7 @@
                     type="tel"
                     class="checkout__phone"
                     placeholder="Телефон: +375"
+                    maxlength="13"
                   />
                   <div class="checkout__payment">
                     <div class="cash">
@@ -173,12 +174,21 @@
                       />
                     </div>
                     <div class="c-card">
-                      <input
+                      <div class="slideThree">  
+                        <input type="checkbox" value="Картой" id="slideThree" class= "input__card" name="check" />
+                        <label for="slideThree"></label>
+                      </div>
+                      <!-- <div class="squaredThree">
+                        <input type="checkbox" value="Картой"
+                        class= "input__card" id="squaredThree" name="check"  />
+                        <label for="squaredThree"></label>
+                      </div> -->
+                      <!-- <input
                         type="checkbox"
                         class="input__card"
                         value="Картой"
-                      />
-                      <i class="flaticon-credit-card"></i>
+                      /> -->
+                      <i class="flaticon-symbols"></i>
                     </div>
                     <button id="sendBtn" class="btn__primary" type="button">
                       Отправить заказ
@@ -247,11 +257,36 @@
               <i class="flaticon-upload"></i>
             </a>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sed.
-          </p>
+          
         </div>
       </div>
+      <p style="background: #000;">
+        <a
+          style="text-align: center"
+          href="https://starlink.by/"
+          target="_blank"
+          rel="noopener"
+          ><img
+            src="https://starlink.by/starlink-webstudio-whitelogo.png"
+            width="135"
+            height="51"
+        /></a>
+      </p>
+      <p  style="background: #000;">
+        <a
+          style="
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 12px;
+            color: #fff;
+          "
+          href="https://starlink.by/dev-ecommerce.html"
+          target="_blank"
+          rel="noopener"
+          title="Разработка интернет-магазина в Минске"
+          >Разработка интернет-магазина</a
+        >
+      </p>
     </footer>
     <link
       rel="stylesheet defer"
@@ -264,8 +299,8 @@
     />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/imageslider.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/checkout.js"></script>
-    <script src="./js/telegram.js"></script>
+    <script src="./js/script.js?1.0.0"></script>
+    <script src="./js/checkout.js?1.0.0"></script>
+    <script src="./js/telegram.js?1.0.0"></script>
   </body>
 </html>

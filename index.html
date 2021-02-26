@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=1.0.0" />
     <link rel="stylesheet" type="text/css" href="./fonts/flaticon.css" />
     <link rel="icon" href="./images/favicon-32x32.jpg" sizes="32x32" />
     <link rel="icon" href="./images/favicon-192x192.jpg" sizes="192x192" />
@@ -95,7 +95,7 @@
             <li class="head__menu__btn">
               <a href="#vegetables"><i class="flaticon-bbq-1"></i>Овощи</a>
             </li>
-            <li class="head__menu__btn testscroll">
+            <li class="head__menu__btn">
               <a href="#dishes"><i class="flaticon-french-fries"></i>Гарниры</a>
             </li>
             <li class="head__menu__btn">
@@ -105,7 +105,9 @@
               <a href="#sauses"><i class="flaticon-sauce"></i>Соусы</a>
             </li>
             <li class="head__menu__btn">
-              <a href="#"><i class="flaticon-sparkling-water"></i>Напитки</a>
+              <a href="#drinks"
+                ><i class="flaticon-sparkling-water"></i>Напитки</a
+              >
             </li>
           </menu>
         </div>
@@ -139,6 +141,24 @@
                     <picture>
                       <source
                         type="image/webp"
+                        srcset="./images/banner/nightwork.webp"
+                      />
+                      <img
+                        class="swiper-lazy"
+                        data-src="./images/banner/nightwork.jpg"
+                        src="./images/banner/nightwork.jpg"
+                        alt="Режим работы"
+                      />
+                    </picture>
+                    <div class="swiper-lazy-preloader"></div>
+                  </div>
+                </div>
+
+                <div class="image__slider__item swiper-slide">
+                  <div class="image__slider_image bg_red">
+                    <picture>
+                      <source
+                        type="image/webp"
                         srcset="./images/banner/krevetki-new.webp"
                       />
                       <img
@@ -156,7 +176,8 @@
             </div>
           </div>
           <div class="content">
-            <h2 id="sets">Шашлычные сеты</h2>
+            <a class="anchor" id="sets"></a>
+            <h2>Шашлычные сеты</h2>
             <div class="listing__block">
               <div class="listing__item">
                 <div class="listing__image">
@@ -425,8 +446,8 @@
                 </div>
               </div>
             </div>
-
-            <h2 id="bbq">Шашлыки</h2>
+            <a class="anchor" id="bbq"></a>
+            <h2>Шашлыки</h2>
             <div class="listing__block">
               <div class="listing__item">
                 <div class="listing__image">
@@ -1124,7 +1145,8 @@
                 </div>
               </div>
             </div>
-            <h2 id="doner">Шаурма</h2>
+            <a class="anchor" id="doner"></a>
+            <h2>Шаурма</h2>
             <div class="listing__block">
               <div class="listing__item">
                 <div class="listing__image">
@@ -1507,7 +1529,8 @@
                 </div>
               </div>
             </div>
-            <h2 id="kebab">Люля кебаб</h2>
+            <a class="anchor" id="kebab"></a>
+            <h2>Люля кебаб</h2>
             <div class="listing__block">
               <div class="listing__item">
                 <div class="listing__image">
@@ -1644,8 +1667,8 @@
                 </div>
               </div>
             </div>
-
-            <h2 id="vegetables">Овощи на углях</h2>
+            <a class="anchor" id="vegetables"></a>
+            <h2>Овощи на углях</h2>
             <div class="listing__block">
               <div class="listing__item">
                 <div class="listing__image">
@@ -1859,8 +1882,8 @@
                 </div>
               </div>
             </div>
-
-            <h2 id="dishes">Гарниры</h2>
+            <a class="anchor" id="dishes"></a>
+            <h2>Гарниры</h2>
             <div class="listing__block">
               <div class="listing__item">
                 <div class="listing__image">
@@ -2023,7 +2046,8 @@
                 </div>
               </div>
             </div>
-            <h2 id="burgers">Бургеры</h2>
+            <a class="anchor" id="burgers"></a>
+            <h2>Бургеры</h2>
             <div class="listing__block">
               <div class="listing__item">
                 <div class="listing__image">
@@ -2146,7 +2170,8 @@
                 </div>
               </div>
             </div>
-            <h2 id="sauses">Соусы</h2>
+            <a class="anchor" id="sauses"></a>
+            <h2>Соусы</h2>
             <div class="listing__block">
               <div class="listing__item">
                 <div class="listing__image">
@@ -2311,6 +2336,283 @@
                 </div>
               </div>
             </div>
+            <a class="anchor" id="drinks"></a>
+            <h2>Напитки</h2>
+            <div class="listing__block">
+              <div class="listing__item">
+                <div class="listing__image">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 200px) and (max-width: 600px)"
+                      srcset="./images/drinks/bonaqua-mob.webp"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 601px)"
+                      srcset="./images/drinks/bonaqua.webp"
+                    />
+                    <source
+                      media="(min-width: 200px) and (max-width: 600px)"
+                      srcset="./images/drinks/bonaqua-mob.jpg"
+                    />
+                    <source
+                      media="(min-width: 601px)"
+                      srcset="./images/drinks/bonaqua.jpg"
+                    />
+                    <img
+                      src="./images/drinks/bonaqua.jpg"
+                      alt="Фирменный горчичный соус"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="listing__description">
+                  <h3>Напиток газированный Bonaqua</h3>
+                  <button
+                    class="btn__secondary add-to-cart"
+                    data-id="bonaqua"
+                  ></button>
+                  <div class="listing__weight">
+                    <i class="flaticon-measurement"> </i><span>0.5 л.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="listing__item">
+                <div class="listing__image">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 200px) and (max-width: 600px)"
+                      srcset="./images/drinks/burn-mob.webp"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 601px)"
+                      srcset="./images/drinks/burn.webp"
+                    />
+                    <source
+                      media="(min-width: 200px) and (max-width: 600px)"
+                      srcset="./images/drinks/burn-mob.jpg"
+                    />
+                    <source
+                      media="(min-width: 601px)"
+                      srcset="./images/drinks/burn.jpg"
+                    />
+                    <img
+                      src="./images/drinks/burn.jpg"
+                      alt="Напиток газированный Burn — 0.25 л."
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="listing__description">
+                  <h3>Напиток газированный Burn</h3>
+                  <button
+                    class="btn__secondary add-to-cart"
+                    data-id="burn"
+                  ></button>
+                  <div class="listing__weight">
+                    <i class="flaticon-measurement"> </i><span>0.25 л.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="listing__item">
+                <div class="listing__image">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 200px) and (max-width: 600px)"
+                      srcset="./images/drinks/fanta-mob.webp"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 601px)"
+                      srcset="./images/drinks/fanta.webp"
+                    />
+                    <source
+                      media="(min-width: 200px) and (max-width: 600px)"
+                      srcset="./images/drinks/fanta-mob.jpg"
+                    />
+                    <source
+                      media="(min-width: 601px)"
+                      srcset="./images/drinks/fanta.jpg"
+                    />
+                    <img
+                      src="./images/drinks/fanta.jpg"
+                      alt="Напиток газированный Fanta — 0.5 л."
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="listing__description">
+                  <h3>Напиток газированный Fanta</h3>
+                  <button
+                    class="btn__secondary add-to-cart"
+                    data-id="fanta"
+                  ></button>
+                  <div class="listing__weight">
+                    <i class="flaticon-measurement"> </i><span>0.5 л.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="listing__item">
+                <div class="listing__image">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 200px) and (max-width: 600px)"
+                      srcset="./images/drinks/sprite-mob.webp"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 601px)"
+                      srcset="./images/drinks/sprite.webp"
+                    />
+                    <source
+                      media="(min-width: 200px) and (max-width: 600px)"
+                      srcset="./images/drinks/sprite-mob.jpg"
+                    />
+                    <source
+                      media="(min-width: 601px)"
+                      srcset="./images/drinks/sprite.jpg"
+                    />
+                    <img
+                      src="./images/drinks/sprite.jpg"
+                      alt="Напиток газированный Sprite — 0.5 л."
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="listing__description">
+                  <h3>Напиток газированный Sprite</h3>
+                  <button
+                    class="btn__secondary add-to-cart"
+                    data-id="sprite"
+                  ></button>
+                  <div class="listing__weight">
+                    <i class="flaticon-measurement"> </i><span>0.5 л.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="listing__item">
+                <div class="listing__image">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 200px) and (max-width: 600px)"
+                      srcset="./images/drinks/rich-mob.webp"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 601px)"
+                      srcset="./images/drinks/rich.webp"
+                    />
+                    <source
+                      media="(min-width: 200px) and (max-width: 600px)"
+                      srcset="./images/drinks/rich-mob.jpg"
+                    />
+                    <source
+                      media="(min-width: 601px)"
+                      srcset="./images/drinks/rich.jpg"
+                    />
+                    <img
+                      src="./images/drinks/rich.jpg"
+                      alt="Сок Rich в ассортименте — 0.2 л."
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="listing__description">
+                  <h3>Сок Rich</h3>
+                  <button
+                    class="btn__secondary add-to-cart"
+                    data-id="rich"
+                  ></button>
+                  <div class="listing__weight">
+                    <i class="flaticon-measurement"> </i><span>0.2 л.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="listing__item">
+                <div class="listing__image">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 200px) and (max-width: 600px)"
+                      srcset="./images/drinks/sok-dobriy-mob.webp"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 601px)"
+                      srcset="./images/drinks/sok-dobriy.webp"
+                    />
+                    <source
+                      media="(min-width: 200px) and (max-width: 600px)"
+                      srcset="./images/drinks/sok-dobriy-mob.jpg"
+                    />
+                    <source
+                      media="(min-width: 601px)"
+                      srcset="./images/drinks/sok-dobriy.jpg"
+                    />
+                    <img
+                      src="./images/drinks/sok-dobriy.jpg"
+                      alt="Сок «Добрый» в ассортименте — 0.2 л."
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="listing__description">
+                  <h3>Сок «Добрый»</h3>
+                  <button
+                    class="btn__secondary add-to-cart"
+                    data-id="sok-dobriy"
+                  ></button>
+                  <div class="listing__weight">
+                    <i class="flaticon-measurement"> </i><span>0.2 л.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="listing__item">
+                <div class="listing__image">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 200px) and (max-width: 600px)"
+                      srcset="./images/drinks/tanayran-mob.webp"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 601px)"
+                      srcset="./images/drinks/tanayran.webp"
+                    />
+                    <source
+                      media="(min-width: 200px) and (max-width: 600px)"
+                      srcset="./images/drinks/tanayran-mob.jpg"
+                    />
+                    <source
+                      media="(min-width: 601px)"
+                      srcset="./images/drinks/tanayran.jpg"
+                    />
+                    <img
+                      src="./images/drinks/tanayran.jpg"
+                      alt="Напиток кисломолочный «Тан Айран»"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="listing__description">
+                  <h3>Напиток кисломолочный «Тан Айран»</h3>
+                  <button
+                    class="btn__secondary add-to-cart"
+                    data-id="tanayran"
+                  ></button>
+                  <div class="listing__weight">
+                    <i class="flaticon-measurement"> </i><span>0.5 л.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </article>
@@ -2369,11 +2671,35 @@
               <i class="flaticon-upload"></i>
             </a>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sed.
-          </p>
         </div>
       </div>
+      <p style="background: #000">
+        <a
+          style="text-align: center"
+          href="https://starlink.by/"
+          target="_blank"
+          rel="noopener"
+          ><img
+            src="https://starlink.by/starlink-webstudio-whitelogo.png"
+            width="135"
+            height="51"
+        /></a>
+      </p>
+      <p style="background: #000">
+        <a
+          style="
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 12px;
+            color: #fff;
+          "
+          href="https://starlink.by/dev-ecommerce.html"
+          target="_blank"
+          rel="noopener"
+          title="Разработка интернет-магазина в Минске"
+          >Разработка интернет-магазина</a
+        >
+      </p>
     </footer>
     <link
       rel="stylesheet defer"
@@ -2386,6 +2712,6 @@
     />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/imageslider.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js?1.0.0"></script>
   </body>
 </html>

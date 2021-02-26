@@ -38,13 +38,17 @@
   font-family: "Montserrat";
 }
 
-.btn__secondary:hover {
+.clicked {
   background: #fccc4c;
   color: #000;
 }
 
 footer {
   background: #636363;
+}
+
+footer p {
+  text-align: center;
 }
 
 .foot {
@@ -129,6 +133,7 @@ footer {
   max-width: 70%;
   margin-left: auto;
   color: #f5f5f5;
+  text-align: inherit;
 }
 
 .foot__menu i::before {

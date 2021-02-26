@@ -13,8 +13,8 @@ const sendBtn = document.querySelector("#sendBtn");
 
 sendBtn.addEventListener("click", (event) => {
   event.preventDefault;
-  renderMessage();
-  clearCart();
+  // renderMessage();
+  fieldValidation();
 });
 
 function renderMessage() {
@@ -100,7 +100,15 @@ function fieldValidation() {
   const address = document.querySelector(".input__address");
   const phone = document.querySelector(".checkout__phone");
 
-  if (name.value == "" || address.value == "" || phone.value == "") {
-    console.log("Empty fields");
+  if (name.value == "") {
+    // console.log("Empty fields name");
+    name.classList.add("emptyfield");
+  } else if (address.value == "") {
+    address.classList.add("emptyfield");
+  } else if (phone.value == "") {
+    phone.classList.add("emptyfield");
+  } else {
+    renderMessage();
+    clearCart();
   }
 }

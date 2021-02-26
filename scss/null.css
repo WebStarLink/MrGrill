@@ -38,7 +38,7 @@
   font-family: "Montserrat";
 }
 
-.btn__secondary:hover {
+.clicked {
   background: #fccc4c;
   color: #000;
 }
@@ -120,6 +120,12 @@ a {
 
 a:hover, a:visited, a:hover, a:active, a:focus {
   -webkit-tap-highlight-color: transparent;
+}
+
+a.anchor {
+  position: relative;
+  top: -55px;
+  visibility: hidden;
 }
 
 menu {

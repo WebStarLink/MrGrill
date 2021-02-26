@@ -153,11 +153,20 @@ async function cartData() {
 document.addEventListener("click", (event) => {
   if (event.target.classList.contains("add-to-cart")) {
     addToCart(event.target.dataset.id);
+    addedGoods(event);
   }
   if (event.target.classList.contains("del-from-cart")) {
     removeFromCart(event.target.dataset.id);
   }
 });
+
+function addedGoods(event) {
+  event.target.classList.add("clicked");
+  setTimeout(
+    () => document.querySelector(".clicked").classList.remove("clicked"),
+    200
+  );
+}
 
 // Добавление товара в корзину
 const addToCart = (id) => {
