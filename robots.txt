@@ -1,6 +1,5 @@
 User-agent: *
-Disallow: /
-Disallow: /contacts.html
-Disallow: /php/
 Disallow: /scss/
-Sitemap: 
+Disallow: /fonts-backup/
+Disallow: /json/
+Sitemap: https://mrgrill.by/sitemap.xml

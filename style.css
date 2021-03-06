@@ -8,6 +8,12 @@
   border-radius: 1.5rem;
 }
 
+.bg_blur {
+  position: relative;
+  background: #000;
+  border-radius: 1.5rem;
+}
+
 .btn__primary {
   width: 100%;
   background: #fccc4c;
@@ -160,12 +166,23 @@ button {
   margin-bottom: 8rem;
 }
 
+details {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .bg_darkgray {
   background: #f5f5f5;
 }
 
 .bg_red {
   background: #e4584b;
+  border-radius: 1.5rem;
+}
+
+.bg_blur {
+  position: relative;
+  background: #000;
   border-radius: 1.5rem;
 }
 
@@ -211,6 +228,12 @@ button {
 
 .bg_red {
   background: #e4584b;
+  border-radius: 1.5rem;
+}
+
+.bg_blur {
+  position: relative;
+  background: #000;
   border-radius: 1.5rem;
 }
 
@@ -443,6 +466,12 @@ button {
   border-radius: 1.5rem;
 }
 
+.bg_blur {
+  position: relative;
+  background: #000;
+  border-radius: 1.5rem;
+}
+
 .btn__primary {
   width: 100%;
   background: #fccc4c;
@@ -616,6 +645,19 @@ footer p {
   display: none;
 }
 
+.image__slider h3 {
+  position: absolute;
+  bottom: 15%;
+  border-bottom-right-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  left: 0;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  background: #fccc4c;
+}
+
 .image__slider {
   position: relative;
 }
@@ -632,6 +674,8 @@ footer p {
 
 .image__slider_image img {
   border-radius: 1.5rem;
+  opacity: 0.8;
+  width: 100%;
 }
 
 ul.features__list {
@@ -1092,6 +1136,7 @@ summary {
   height: 26px;
   background: #fccc4c;
   position: relative;
+  -webkit-tap-highlight-color: transparent;
   border-radius: 50px;
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
           box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
@@ -1318,8 +1363,17 @@ summary {
     left: 0;
     padding: 1rem calc(50% - 590px);
   }
+  .listing__image {
+    width: 100%;
+  }
   .listing__description {
     padding: 0.5rem 1rem;
+    width: 100%;
+  }
+  summary {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-right: 0;
   }
   .btn__secondary {
     font-size: 1.3rem;

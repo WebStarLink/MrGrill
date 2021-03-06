@@ -35,6 +35,18 @@
     display: none;
   }
   background: $white;
+  h3 {
+    position: absolute;
+    bottom: 15%;
+    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    left: 0;
+    color: $black;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    background: $yellow;
+  }
 }
 
 .image__slider {
@@ -52,6 +64,8 @@
 .image__slider_image {
   img {
     border-radius: 1.5rem;
+    opacity: 0.8;
+    width: 100%;
   }
 }
 
@@ -414,6 +428,7 @@ summary {
   height: 26px;
   background: $yellow;
   position: relative;
+  -webkit-tap-highlight-color: transparent;
   border-radius: 50px;
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5),
     0px 1px 0px rgba(255, 255, 255, 0.2);

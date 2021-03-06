@@ -7,6 +7,12 @@
   border-radius: 1.5rem;
 }
 
+.bg_blur {
+  position: relative;
+  background: #000;
+  border-radius: 1.5rem;
+}
+
 .btn__primary {
   width: 100%;
   background: #fccc4c;
@@ -157,5 +163,10 @@ button {
 
 .content:last-child {
   margin-bottom: 8rem;
+}
+
+details {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 /*# sourceMappingURL=null.css.map */

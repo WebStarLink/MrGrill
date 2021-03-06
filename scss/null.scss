@@ -105,3 +105,8 @@ button {
     margin-bottom: 8rem;
   }
 }
+
+details {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}

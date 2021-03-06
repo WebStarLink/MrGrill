@@ -1,8 +1,8 @@
 // https://api.telegram.org/bot1195246232:AAHTjNkeLWQw4wCFW9DbFcXWZ9PsyL8x0Jc/getUpdates
 // https://api.telegram.org/bot1195246232:AAHTjNkeLWQw4wCFW9DbFcXWZ9PsyL8x0Jc/sendMessage?chat_id=-487741813
 
-const token = "1195246232:AAHTjNkeLWQw4wCFW9DbFcXWZ9PsyL8x0Jc";
-const chatId = "-487741813";
+const token = "975586512:AAFCKKwyC_cQAkVsCYMj64zopMj1eXTklYE";
+const chatId = "-429179947";
 let url =
   "https://api.telegram.org/bot" +
   token +
@@ -13,7 +13,6 @@ const sendBtn = document.querySelector("#sendBtn");
 
 sendBtn.addEventListener("click", (event) => {
   event.preventDefault;
-  // renderMessage();
   fieldValidation();
 });
 
@@ -100,10 +99,9 @@ function fieldValidation() {
   const address = document.querySelector(".input__address");
   const phone = document.querySelector(".checkout__phone");
 
-  if (name.value == "") {
-    // console.log("Empty fields name");
+  if (name.value == "" || name.value.includes("#") === true) {
     name.classList.add("emptyfield");
-  } else if (address.value == "") {
+  } else if (address.value == "" || address.value.includes("#") === true) {
     address.classList.add("emptyfield");
   } else if (phone.value == "") {
     phone.classList.add("emptyfield");

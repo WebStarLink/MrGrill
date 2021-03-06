@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" href="style.css?v=1.0.0" />
+    <link rel="stylesheet" href="style.css?v=1.0.1" />
     <link rel="stylesheet" type="text/css" href="./fonts/flaticon.css" />
     <link rel="icon" href="./images/favicon-32x32.jpg" sizes="32x32" />
     <link rel="icon" href="./images/favicon-192x192.jpg" sizes="192x192" />
@@ -28,6 +28,7 @@
       name="keywords"
       content="шаурма, шаурму, донер, денер, doner, шашлык, шашлыки, кебаб, люля, гриль, гриле, еда, еду, доставка, заказ, заказать, минск, минске"
     />
+    <script src="./js/metrika.js" defer></script>
   </head>
 
   <body>
@@ -35,7 +36,7 @@
       <div class="wrapper">
         <div class="head">
           <div class="head__logo">
-            <a href="./index.html">
+            <a href="https://mrgrill.by/">
               <img
                 src="./images/logo.png"
                 alt="Барбекю драйв Mr.Grill в Минске"
@@ -44,12 +45,12 @@
           </div>
           <div class="head__contact">
             <div class="head__contact_btn call">
-              <a href="#" title="Контакты веб студии StarLink"
+              <a href="#" title="Контакты барбекю драйв Mr.Grill"
                 ><i class="flaticon-smartphone-4"></i
               ></a>
             </div>
             <div class="head__contact_btn map">
-              <a href="#" title="Контакты веб студии StarLink"
+              <a href="#" title="Контакты барбекю драйв Mr.Grill"
                 ><i class="flaticon-smartphone"></i
               ></a>
             </div>
@@ -120,55 +121,64 @@
             <div class="image__slider">
               <div class="image__slider__wrapper swiper-wrapper">
                 <div class="image__slider__item swiper-slide">
-                  <div class="image__slider_image bg_red">
+                  <div class="image__slider_image bg_blur">
                     <picture>
                       <source
                         type="image/webp"
-                        srcset="./images/banner/kebab-chickenset.webp"
+                        srcset="./images/banner/coal.webp"
                       />
                       <img
                         class="swiper-lazy"
-                        data-src="./images/banner/kebab-chickenset.png"
-                        src="./images/banner/kebab-chickenset.png"
-                        alt="Сет шашлыков из курицы"
+                        data-src="./images/banner/coal.jpg"
+                        src="./images/banner/coal.jpg"
+                        alt="Шашлык на мангале в Минске"
                       />
                     </picture>
                     <div class="swiper-lazy-preloader"></div>
+                    <h3>Готовим на углях</h3>
                   </div>
                 </div>
                 <div class="image__slider__item swiper-slide">
-                  <div class="image__slider_image bg_red">
-                    <picture>
-                      <source
-                        type="image/webp"
-                        srcset="./images/banner/nightwork.webp"
-                      />
-                      <img
-                        class="swiper-lazy"
-                        data-src="./images/banner/nightwork.jpg"
-                        src="./images/banner/nightwork.jpg"
-                        alt="Режим работы"
-                      />
-                    </picture>
+                  <div class="image__slider_image bg_blur">
+                    <a
+                      href="https://www.youtube.com/watch?v=TR51F1TEX4Q"
+                      target="_blank"
+                    >
+                      <picture>
+                        <source
+                          type="image/webp"
+                          srcset="./images/banner/video-review.webp"
+                        />
+                        <img
+                          class="swiper-lazy"
+                          data-src="./images/banner/video-review.jpg"
+                          src="./images/banner/video-review.jpg"
+                          alt="Мистер Грилль отзывы"
+                        />
+                      </picture>
+                    </a>
                     <div class="swiper-lazy-preloader"></div>
+                    <h3>Обзор Mr.Grill</h3>
+                    <div class="playbtn"></div>
                   </div>
                 </div>
 
                 <div class="image__slider__item swiper-slide">
-                  <div class="image__slider_image bg_red">
+                  <div class="image__slider_image bg_blur">
                     <picture>
                       <source
                         type="image/webp"
-                        srcset="./images/banner/krevetki-new.webp"
+                        srcset="./images/banner/friday.webp"
                       />
                       <img
                         class="swiper-lazy"
-                        data-src="./images/banner/krevetki-new.png"
-                        src="./images/banner/krevetki-new.png"
+                        data-src="./images/banner/friday.jpg"
+                        src="./images/banner/friday.jpg"
                         alt="Сет креветок"
                       />
                     </picture>
                     <div class="swiper-lazy-preloader"></div>
+                    <h3>Пт - Сб работаем до 01:00</h3>
                   </div>
                 </div>
               </div>
@@ -2683,6 +2693,7 @@
             src="https://starlink.by/starlink-webstudio-whitelogo.png"
             width="135"
             height="51"
+            alt="Веб студия в Минске"
         /></a>
       </p>
       <p style="background: #000">

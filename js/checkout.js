@@ -74,23 +74,17 @@ const singleItemPlus = (id) => {
 const singleItemMinus = (id) => {
   cart[id]["count"]--;
   localStorage.setItem("cart", JSON.stringify(cart));
-  // if (cart[id]["count"] == 0) {
-  //   document.addEventListener("", (event) => {
-  //     if (event.target.classList.contains("minus-btn")) {
-  //       singleItem = event.target.closest(".cart__item");
-  //       console.log(singleItem);
-  //       singleItem.style.opacity = "0";
-  //       singleItem.addEventListener("transitionend", () => {
-  //         removeItem(event.target.dataset.id);
-  //         console.log("Opacity");
-  //         console.log("Достигло нуля");
-  //       });
-  //     }
-  //   });
-  // } else {
-  // }
-  calcQty();
-  renderCart();
+  if (cart[id]["count"] == 0) {
+    singleItem = event.target.closest(".cart__item");
+    singleItem.style.opacity = "0";
+    singleItem.addEventListener("transitionend", () => {
+      calcQty();
+      renderCart();
+    });
+  } else {
+    calcQty();
+    renderCart();
+  }
 };
 
 //МАСКА ТЕЛЕФОНА

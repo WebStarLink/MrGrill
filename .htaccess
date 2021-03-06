@@ -5,11 +5,66 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
 RewriteCond %{SERVER_PORT} !^443$
 RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
 
-RewriteCond %{HTTP_HOST} ^www.stela.by$ [NC]
-RewriteRule ^(.*)$ https://stela/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.mrgrill.by$ [NC]
+RewriteRule ^(.*)$ https://mrgrill/$1 [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !\..{1,10}$
 RewriteCond %{REQUEST_URI} !(.*)/$
-RewriteRule ^(.*)$ http://stela/$1/ [L,R=301]
-ErrorDocument 404 /404.html 
+RewriteRule ^(.*)$ http://mrgrill.by/$1/ [L,R=301]
+
+<FilesMatch ".(webp)$">
+  Header set Cache-Control "max-age=2592000"
+</FilesMatch>
+
+Redirect 301 /menu/sets/ https://mrgrill.by
+Redirect 301 /menu/burgers/ https://mrgrill.by
+Redirect 301 /menu/dishes/ https://mrgrill.by
+Redirect 301 /menu/kebab/ https://mrgrill.by
+Redirect 301 /menu/drinks/ https://mrgrill.by
+Redirect 301 /menu/vegetables/ https://mrgrill.by
+Redirect 301 /menu/sauses/ https://mrgrill.by
+Redirect 301 /menu/doner/ https://mrgrill.by
+Redirect 301 /menu/bbq/ https://mrgrill.by
+Redirect 301 /shop/ https://mrgrill.by
+Redirect 301 /product/mustard-sauce/ https://mrgrill.by
+Redirect 301 /product/red-sauce/ https://mrgrill.by
+Redirect 301 /product/garlic-sauce/ https://mrgrill.by
+Redirect 301 /product/burn/ https://mrgrill.by
+Redirect 301 /product/tanayran/ https://mrgrill.by
+Redirect 301 /product/gamburger-beef/ https://mrgrill.by
+Redirect 301 /product/gamburger-chicken/ https://mrgrill.by
+Redirect 301 /product/mrshaurma-small/ https://mrgrill.by
+Redirect 301 /product/shaurma-small/ https://mrgrill.by
+Redirect 301 /product/shaurma-middle/ https://mrgrill.by
+Redirect 301 /product/shaurma-big/ https://mrgrill.by
+Redirect 301 /product/shashlyk-chickenwings/ https://mrgrill.by
+Redirect 301 /product/kurinoe-file/ https://mrgrill.by
+Redirect 301 /product/shaslyk-porkbone/ https://mrgrill.by
+Redirect 301 /product/shashlyk-porkrebra/ https://mrgrill.by
+Redirect 301 /product/kurinye-nozhki/ https://mrgrill.by
+Redirect 301 /product/baranina-na-uglyah/ https://mrgrill.by
+Redirect 301 /product/ryba-na-uglyah/ https://mrgrill.by
+Redirect 301 /product/ovoshnoi-salat/ https://mrgrill.by
+Redirect 301 /product/ovoshi-na-uglyah/ https://mrgrill.by
+Redirect 301 /product/kebab-porkbeef/ https://mrgrill.by
+Redirect 301 /product/kebab-chiken/ https://mrgrill.by
+Redirect 301 /product/grilled-cheese/ https://mrgrill.by
+Redirect 301 /product/set-lucky-fishing/ https://mrgrill.by
+Redirect 301 /product/rustic-potatoes/ https://mrgrill.by
+Redirect 301 /product/french-fries/ https://mrgrill.by
+Redirect 301 /product/kartofel-na-uglyah/ https://mrgrill.by
+Redirect 301 /product/set-pork-party/ https://mrgrill.by
+Redirect 301 /product/shrimp/ https://mrgrill.by
+Redirect 301 /product/shaslyk-pork/ https://mrgrill.by
+Redirect 301 /product/set-chicken-escape/ https://mrgrill.by
+Redirect 301 /product/set-mix/ https://mrgrill.by
+Redirect 301 /product/dobry-juice/ https://mrgrill.by
+Redirect 301 /product/set-kebab/ https://mrgrill.by
+Redirect 301 /product/mr-shaurma-big/ https://mrgrill.by
+Redirect 301 /product/shaurma-king/ https://mrgrill.by
+Redirect 301 /product/grilled-mushrooms/ https://mrgrill.by
+Redirect 301 /product/rich-juice/ https://mrgrill.by
+Redirect 301 /product/sprite/ https://mrgrill.by
+Redirect 301 /product/fanta/ https://mrgrill.by
+Redirect 301 /product/bonaqua/ https://mrgrill.by

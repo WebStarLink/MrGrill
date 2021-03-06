@@ -163,8 +163,17 @@
     left: 0;
     padding: 1rem calc(50% - 590px);
   }
+  .listing__image {
+    width: 100%;
+  }
   .listing__description {
     padding: 0.5rem 1rem;
+    width: 100%;
+  }
+  summary {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-right: 0;
   }
 
   .btn__secondary {
