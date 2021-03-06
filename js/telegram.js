@@ -1,8 +1,5 @@
-// https://api.telegram.org/bot1195246232:AAHTjNkeLWQw4wCFW9DbFcXWZ9PsyL8x0Jc/getUpdates
-// https://api.telegram.org/bot1195246232:AAHTjNkeLWQw4wCFW9DbFcXWZ9PsyL8x0Jc/sendMessage?chat_id=-487741813
-
-const token = "975586512:AAFCKKwyC_cQAkVsCYMj64zopMj1eXTklYE";
-const chatId = "-429179947";
+const token = "Your token";
+const chatId = "Your chat ID";
 let url =
   "https://api.telegram.org/bot" +
   token +

@@ -1,0 +1,2 @@
+const token = "975586512:AAFCKKwyC_cQAkVsCYMj64zopMj1eXTklYE";
+const chatId = "-429179947";
