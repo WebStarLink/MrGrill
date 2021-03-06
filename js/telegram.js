@@ -1,4 +1,4 @@
-const token = "Your token";
+const token = "Your bot token";
 const chatId = "Your chat ID";
 let url =
   "https://api.telegram.org/bot" +
